@@ -1,0 +1,107 @@
+.resultBlock{
+    width: 100%;
+    height: 750px;
+    background-image: linear-gradient(#2980b9,#8e44ad,#2c3e50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin box-shadow($ResultBlockShadow) {
+    -webkit-box-shadow: $ResultBlockShadow;
+    -moz-box-shadow: $ResultBlockShadow;
+    box-shadow: $ResultBlockShadow;
+  }
+   $resultShadow: 0px 30px 60px 0px #666666, 0px 0px 0px #000 inset;
+  
+.resultBlock .counterBlock{
+    width: 80%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include box-shadow($resultShadow)
+}
+
+.resultBlock .counterBlock .counters{
+    background-color: #7b614f;
+    width: 300px; 
+    margin: 4px 4px;
+    transition: 0.5s ease;
+    height: 300px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 4px;
+}
+
+.resultBlock .counterBlock .counters>i{
+    font-size: 35px;
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: #ffffff;
+}
+
+.resultBlock .counterBlock .counters:hover>i{
+    transform: translateY(-15px);
+}
+
+.resultBlock .counterBlock .counters .otherBlock{
+    display: flex;
+    opacity: 1;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);;
+    color: #ffffff;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultBlock .counterBlock .counters:hover .otherBlock{
+    transform: translateY(15px);
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and(max-width:568px){
+    .resultBlock .counterBlock{
+        height: 500px;
+    }
+
+    .resultBlock .counterBlock .counters .otherBlock .headOfCounter{
+        font-size: 18px;
+    }
+
+    .resultBlock .counterBlock .counters .otherBlock .paragraphOfCounter{
+        font-size: 12px;
+    }
+    .resultBlock .counterBlock .counters{
+         width: 150px; 
+         height: 150px;
+    }
+}
+
+
+@media screen and(max-width:1300px){
+    .resultBlock .counterBlock{
+        height: 700px;
+    }
+
+    .resultBlock .counterBlock .counters .otherBlock .headOfCounter{
+        font-size: 18px;
+    }
+
+    .resultBlock .counterBlock .counters .otherBlock .paragraphOfCounter{
+        font-size: 12px;
+    }
+    .resultBlock .counterBlock .counters{
+         width: 200px; 
+         height: 200px;
+    }
+}
+
+
+
+
+

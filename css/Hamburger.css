@@ -1,0 +1,111 @@
+.HeaderParts .hamburger {
+  width: 60px;
+  height: 60px;
+  background-color: #eeeeee;
+  position: fixed;
+  right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 30px 60px 0px #666666, 0px 0px 0px #000 inset;
+  box-shadow: 0px 30px 60px 0px #666666, 0px 0px 0px #000 inset;
+}
+
+.HeaderParts .hamburger:hover {
+  cursor: pointer;
+}
+
+.HeaderParts .hamburger .list {
+  width: 3em;
+  -webkit-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+  height: 0.5em;
+  background-color: #000000;
+}
+
+.HeaderParts .hamburger .list::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  -webkit-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  width: 3em;
+  height: 0.5em;
+  background-color: #000000;
+}
+
+.HeaderParts .hamburger .list::after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  width: 3em;
+  -webkit-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  height: 0.5em;
+  background-color: #000000;
+}
+
+.HeaderParts .hamburger .open.list::after {
+  -webkit-transform: rotate(-405deg);
+          transform: rotate(-405deg);
+  top: 0;
+}
+
+.HeaderParts .hamburger .open.list {
+  background: none;
+}
+
+.HeaderParts .hamburger .open.list::before {
+  -webkit-transform: rotate(405deg);
+          transform: rotate(405deg);
+  top: 0;
+}
+
+@media screen and (min-width: 300px) and (max-width: 568px) {
+  .HeaderParts .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #ffffff;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 55px;
+    height: 55px;
+  }
+  .HeaderParts .hamburger .list {
+    width: 2.5em;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    position: relative;
+    height: 0.4em;
+    background-color: #000000;
+  }
+  .HeaderParts .hamburger .list::before {
+    top: 18px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    width: 2.5em;
+    height: 0.4em;
+    background-color: #000000;
+  }
+  .HeaderParts .hamburger .list::after {
+    top: -18px;
+    width: 2.5em;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    height: 0.4em;
+    background-color: #000000;
+  }
+}
+/*# sourceMappingURL=Hamburger.css.map */

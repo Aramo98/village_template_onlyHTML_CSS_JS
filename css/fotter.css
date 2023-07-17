@@ -1,0 +1,443 @@
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .footerPart .Map {
+  width: 400px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 6px 6px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 4px 4px 4px #4b4949;
+          box-shadow: 4px 4px 4px #4b4949;
+}
+
+.footer .footerPart {
+  background: #13e03c11;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1900px;
+}
+
+.footer .footerPartTwo {
+  width: 95%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #0e0d0d;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 30px 60px 0px #666666, 0px 0px 0px #000 inset;
+          box-shadow: 0px 30px 60px 0px #666666, 0px 0px 0px #000 inset;
+}
+
+.footer .footerPartTwo .lastFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 350px;
+  width: 100%;
+}
+
+.footer .footerPartTwo .lastFooter > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.footer .footerPartTwo .lastFooter > span p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer .footerPart .copyrights {
+  background-color: #7574a9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footerPart .otherInform {
+  background-color: #74a977;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footerPart .forMenu {
+  width: 60%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1% 1%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: left;
+}
+
+.footer .footerPart .forMenu .table {
+  height: 450px;
+  width: 300px;
+  margin: 4px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px -5px 11px 0px #666666, 0px 0px 0px #000 inset;
+          box-shadow: 0px -5px 11px 0px #666666, 0px 0px 0px #000 inset;
+}
+
+.footer .footerPart .forMenu .tableOne .Lists > ul > li {
+  padding-bottom: 29px;
+  font-weight: bold;
+  padding: 15px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.footer .footerPart .forMenu .tableOne .Lists > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutUsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutUsList .IconImage {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutUsList .IconImage img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer .footerPart .forMenu .tableOne .Lists a {
+  text-decoration: none;
+  color: #4b4949;
+  font-weight: 500;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  font-size: 15px;
+  bottom: 10px;
+  position: relative;
+}
+
+.footer .footerPart .forMenu .tableOne .Lists a:hover {
+  color: #e70000;
+  text-decoration: underline;
+}
+
+.footer .footerPart .forMenu .tableTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footerPart .forMenu .tableTwo .Header {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock {
+  height: 300px;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 6px 4px;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock .Links {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 4px;
+  line-height: 3.3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4px 4px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  overflow: hidden;
+  color: #ffffff;
+  border-radius: 15px;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock .FaceBook {
+  background: #1a65c6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock .Instagram {
+  background-image: linear-gradient(45deg, #4658ac, #e7008a, #ff003a, #ff6d00, #ffc53f);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock .Twitter {
+  background: #3c6fb3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock .Telegram {
+  background: #0088cc;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock .Links:hover {
+  width: 150px;
+  text-align: center;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock .Links:hover i {
+  opacity: 0;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock .Links:hover span {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock .Links > span {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  font-size: 20px;
+  opacity: 0;
+  margin: 10px 8px;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock .Links > i {
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
+  font-size: 25px;
+  opacity: 1;
+  position: absolute;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer .footerPart .Map {
+    width: 220px;
+    height: 300px;
+  }
+  .footer .footerPart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footerPart .forMenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 223px;
+    bottom: 0px;
+    height: 590px;
+    position: relative;
+  }
+  .footer .footerPart .forMenu .table {
+    width: 210px;
+    margin: 3px 4px;
+    height: 309px;
+    padding: 15px;
+  }
+  .footer .footerPart .forMenu .table .Lists ul li {
+    font-size: 11.6px;
+    margin: -3px;
+  }
+  .footer .footerPart .forMenu .table .Header .FooterHeadOne {
+    font-size: 25px;
+    margin: 19px;
+    padding: 6px 0px;
+  }
+  .footer .footerPart .forMenu .table .Header .FooterHeadTwo {
+    font-size: 25px;
+    margin: 2px;
+    padding: 0px 0px;
+  }
+  .footer .footerPartTwo {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .footerPartTwo .lastFooter {
+    width: 231px;
+    margin: 0px 4px;
+  }
+  .footer .footerPartTwo .lastFooter > span > p {
+    font-size: 11px;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=fotter.css.map */

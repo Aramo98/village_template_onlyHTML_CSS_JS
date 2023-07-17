@@ -1,0 +1,433 @@
+@import "BarBlock";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  // overflow-y: hidden;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .ModalBack {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 3;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    &.open {
+      visibility: visible;
+      opacity: 1;
+    }
+    &.close {
+      visibility: hidden;
+      opacity: 0;
+    }
+    .ModalBox {
+      width: 600px;
+      height: 400px;
+      display: flex;
+      position: relative;
+      transform: translateY(-500px);
+      padding: 5px 15px;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: #fff;
+      &.open {
+        visibility: visible;
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      .closeButtonBox {
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .closeButton {
+          width: 45px;
+          height: 45px;
+          border: none;
+          outline: none;
+          box-shadow: 4px 4px 10px 4px rgb(221, 218, 218);
+        }
+      }
+      .alertIcon {
+        width: 70px;
+        height: 70px;
+        line-height: 1.1em;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 72px;
+        border-radius: 50%;
+
+        transition: 0.5s infinite ease;
+        animation: errorAnimate 0.5s linear 2s infinite alternate;
+        img {
+          width: 60px;
+          height: 60px;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+        }
+        @keyframes errorAnimate {
+          0% {
+            transform: scale(1.1);
+            transition: 1s;
+          }
+
+          100% {
+            transform: scale(1);
+            transition: 1s;
+          }
+        }
+      }
+      .informAlert {
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+      }
+      .alert {
+        margin-top: 42px;
+        text-align: center;
+        transition: 1s ease;
+      }
+      .donateSucces {
+        text-decoration: none;
+        background: #dfd4d4d5;
+        text-transform: uppercase;
+        padding: 13px 54px;
+        border: none;
+        position: absolute;
+        outline: none;
+        bottom: 50px;
+        -webkit-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        color: #000;
+        overflow: hidden;
+        &:hover{
+          letter-spacing: 4px;
+        }
+      }
+    }
+  }
+  .languageBlock{
+    z-index: 2;
+    top: 30px;
+    left: 0;
+  }
+}
+.DonateBox {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 4px;
+  //  background: #fff;
+  z-index: 1;
+  .FormBox {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    // background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sides {
+      width: 100%;
+      max-width: 500px;
+      max-height: 699px;
+      height: 950px;
+      padding: 4px 4px;
+      margin: 0 23px;
+      position: relative;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .SideOne {
+      .header {
+        padding: 13px 33px;
+        user-select: none;
+        position: absolute;
+        margin: 4px 4px;
+        top: 10px;
+      }
+      .inputBox {
+        
+        width: 500px;
+        height: 130px;
+        margin: 10px 0;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .Label {
+          position: relative;
+          top: 22px;
+          color: #000;
+          transition: 0.6s ease;
+          user-select: none;
+          font : {
+            weight: 500;
+            size: 1.5em;
+          }
+          &.active {
+            transform: translateX(-100px);
+            // font-size: 10px;
+            opacity: 0;
+            // color: #6ce235;
+          }
+        }
+        input {
+          border: none;
+          outline: none;
+          width: 300px;
+          height: 50px;
+          border-bottom: 3px solid #000000;
+          transition: 0.5s ease;
+        }
+      }
+      p {
+        // color: green;
+        font-weight: 700;
+        transition: 0.5s;
+        &.errorActive {
+          font-size: 20px;
+          transition: 0.5s;
+          color: #f00;
+        }
+        &.succesActive {
+          color: rgb(18, 113, 18);
+          transition: 0.5s;
+
+        }
+      }
+    }
+
+    .SideTwo {
+      .header {
+        padding: 13px 33px;
+        user-select: none;
+        position: absolute;
+        margin: 4px 4px;
+        top: 10px;
+      }
+      .inputBox {
+        //  background: #333;
+        width: 500px;
+        height: 130px;
+        gap: 33px;
+        margin: 10px 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .Label {
+          color: #000000;
+          user-select: none;
+          top: 22px;
+          transition: 0.6s ease;
+          font : {
+            weight: 500;
+            size: 1.5em;
+          }
+          &.active {
+            transform: translateX(-100px);
+            opacity: 0;
+          }
+        }
+        input {
+          border: none;
+          outline: none;
+          width: 300px;
+          height: 50px;
+          border-bottom: 3px solid #000000;
+          transition: 0.5s ease;
+        }
+      }
+      .donateBtn {
+        text-decoration: none;
+        background: #dfd4d4d5;
+        text-transform: uppercase;
+        padding: 13px 54px;
+        -webkit-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        color: #000;
+        overflow: hidden;
+      
+    &:hover{
+      transform: scale(1.1);
+    }
+      }
+    }
+  }
+}
+
+
+                  // Now create Media query
+@media screen and(max-width: 991px) {
+  .ModalBack{
+    .ModalBox{
+      max-width: 455px;
+      height: 300px;
+    }
+  }
+  .DonateBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .FormBox {
+      padding: 15px 119px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+
+    
+      .sides {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       position: relative;
+       justify-items: end;
+        height: 700px;
+        display: grid;
+        position: relative;
+        grid-template-columns: 1fr 2fr;
+        margin: 4px 4px;
+        padding: 33px 0px;
+        background: none;
+        .header {
+          left: 0px;
+          top: -15px;
+          width: 100%;
+          display: flex;
+          padding: 4px 13px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .head{
+            color: #ffffff;
+          }
+        }
+        .inputBox {
+          margin: 4px 6px;
+          width: 250px;
+          margin: 0px 29px;
+          height: 121px;
+          .Label {
+            text-align: center;
+            color: #fff;
+          }
+          input {
+            width: 260px;
+            background: none;
+            user-select: none;
+            &::placeholder {
+              text-align: center;
+            }
+          
+          }
+         
+        }
+        .donateBtn{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+         
+          position: relative;
+          padding: 10px 14px;
+          margin: 10px 10px;
+          top: 33px;
+          text-align: center;
+        }
+        }
+      }
+    }
+  }
+                            
+
+  // @media screen and(min-width:400px){
+  //   .DonateBox{
+  //   .FormBox{
+  //     padding: 3px 24px;
+  //     margin: 12px -9px;
+  //     .sides{
+  //       margin: 4px 4px;
+  //       padding: 33px 0px;
+  //       .header{
+  //         left: 0px;
+  //         top: -15px;
+  //         margin: 10px 0px;
+  //         width: 100%;
+  //       }
+  //       .inputBox {
+         
+  //         width: 162px;
+  //         margin: 0px 11px;
+  //         height: 121px;
+  //         .Label {
+  //           text-align: center;
+  //           color: #fff;
+  //         }
+  //         input {
+  //           width: 193px;
+  //           background: none;
+  //           user-select: none;
+  //           &::placeholder {
+  //             text-align: center;
+  //           }
+          
+  //         }
+         
+  //       }
+  //     }
+  //   }
+  //   }
+  // }

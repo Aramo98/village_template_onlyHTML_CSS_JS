@@ -1,0 +1,169 @@
+.languageBlock {
+  width: 200px;
+  padding: 4px 4px;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  height: 50px;
+  z-index: 1;
+  background: #fff;
+  -webkit-box-shadow: 0px 30px 60px 0px #ba1212, 0px 0px 0px #000 inset;
+          box-shadow: 0px 30px 60px 0px #ba1212, 0px 0px 0px #000 inset;
+}
+
+.languageBlock .Languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 4px 4px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.languageBlock .Languages .Langs {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.languageBlock .Languages .Langs .language {
+  border: none;
+  background: none;
+}
+
+.languageBlock .Languages .Langs .flags {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: none;
+  border-radius: 50%;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.languageBlock .Languages .Langs:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.languageBlock .Languages .Langs:hover:hover .title {
+  -webkit-transform: translateY(55px);
+          transform: translateY(55px);
+  visibility: visible;
+  opacity: 1;
+}
+
+.languageBlock .Languages .Langs .title {
+  background: #fff;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  padding: 5px 12px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media screen and (max-width: 568px) {
+  .languageBlock {
+    width: 110px;
+    height: 195px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 0;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #ffffff;
+  }
+  .languageBlock .Languages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .languageBlock .Languages .Langs {
+    margin: 7.1px;
+    top: 16px;
+  }
+  .languageBlock .Languages .Langs:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .languageBlock .Languages .Langs:hover:hover .title {
+    -webkit-transform: translateX(5.1em);
+            transform: translateX(5.1em);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=BarBlock.css.map */

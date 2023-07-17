@@ -1,0 +1,1314 @@
+.languageBlock {
+  width: 200px;
+  padding: 4px 4px;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  height: 50px;
+  z-index: 1;
+  background: #fff;
+  -webkit-box-shadow: 0px 30px 60px 0px #ba1212, 0px 0px 0px #000 inset;
+          box-shadow: 0px 30px 60px 0px #ba1212, 0px 0px 0px #000 inset;
+}
+
+.languageBlock .Languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 4px 4px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.languageBlock .Languages .Langs {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.languageBlock .Languages .Langs .language {
+  border: none;
+  background: none;
+}
+
+.languageBlock .Languages .Langs .flags {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: none;
+  border-radius: 50%;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.languageBlock .Languages .Langs:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.languageBlock .Languages .Langs:hover:hover .title {
+  -webkit-transform: translateY(55px);
+          transform: translateY(55px);
+  visibility: visible;
+  opacity: 1;
+}
+
+.languageBlock .Languages .Langs .title {
+  background: #fff;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  padding: 5px 12px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media screen and (max-width: 568px) {
+  .languageBlock {
+    width: 110px;
+    height: 195px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 0;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #ffffff;
+  }
+  .languageBlock .Languages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .languageBlock .Languages .Langs {
+    margin: 7.1px;
+    top: 16px;
+  }
+  .languageBlock .Languages .Langs:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .languageBlock .Languages .Langs:hover:hover .title {
+    -webkit-transform: translateX(5.1em);
+            transform: translateX(5.1em);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.HeaderParts .hamburger {
+  width: 60px;
+  height: 60px;
+  background-color: #eeeeee;
+  position: fixed;
+  right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 30px 60px 0px #666666, 0px 0px 0px #000 inset;
+  box-shadow: 0px 30px 60px 0px #666666, 0px 0px 0px #000 inset;
+}
+
+.HeaderParts .hamburger:hover {
+  cursor: pointer;
+}
+
+.HeaderParts .hamburger .list {
+  width: 3em;
+  -webkit-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+  height: 0.5em;
+  background-color: #000000;
+}
+
+.HeaderParts .hamburger .list::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  -webkit-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  width: 3em;
+  height: 0.5em;
+  background-color: #000000;
+}
+
+.HeaderParts .hamburger .list::after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  width: 3em;
+  -webkit-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  height: 0.5em;
+  background-color: #000000;
+}
+
+.HeaderParts .hamburger .open.list::after {
+  -webkit-transform: rotate(-405deg);
+          transform: rotate(-405deg);
+  top: 0;
+}
+
+.HeaderParts .hamburger .open.list {
+  background: none;
+}
+
+.HeaderParts .hamburger .open.list::before {
+  -webkit-transform: rotate(405deg);
+          transform: rotate(405deg);
+  top: 0;
+}
+
+@media screen and (min-width: 300px) and (max-width: 568px) {
+  .HeaderParts .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #ffffff;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 55px;
+    height: 55px;
+  }
+  .HeaderParts .hamburger .list {
+    width: 2.5em;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    position: relative;
+    height: 0.4em;
+    background-color: #000000;
+  }
+  .HeaderParts .hamburger .list::before {
+    top: 18px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    width: 2.5em;
+    height: 0.4em;
+    background-color: #000000;
+  }
+  .HeaderParts .hamburger .list::after {
+    top: -18px;
+    width: 2.5em;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    height: 0.4em;
+    background-color: #000000;
+  }
+}
+
+.Histories {
+  padding: 4px 4px;
+  width: 100%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Histories .blocksHistory {
+  width: 80%;
+  padding: 4px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 600px;
+}
+
+.Histories .blocksHistory .Block {
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 600px;
+}
+
+.Histories .blocksHistory .Image {
+  background-image: url(../villimage/Beniamin_32.JPG);
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: center center;
+  background-size: cover;
+}
+
+.Histories .blocksHistory .Image .History {
+  opacity: 0;
+  width: 600px;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.Histories .blocksHistory .Image:hover .History {
+  opacity: 1;
+}
+
+.Histories .blocksHistory .Image .History .headerHistory {
+  padding: 19px 20px;
+  font-size: 35px;
+  background: none;
+  color: white;
+  margin: 4px 4px;
+}
+
+.Histories .blocksHistory .Image .History .HistoryParagraph {
+  background: none;
+  color: #ffffff;
+  text-align: center;
+  padding: 19px 16px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 568px) {
+  .Histories .blocksHistory .Image {
+    width: 260px;
+  }
+  .Histories .blocksHistory .Image .History {
+    width: 260px;
+    text-align: justify;
+  }
+}
+
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .footerPart .Map {
+  width: 400px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 6px 6px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 4px 4px 4px #4b4949;
+          box-shadow: 4px 4px 4px #4b4949;
+}
+
+.footer .footerPart {
+  background: #13e03c11;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1900px;
+}
+
+.footer .footerPartTwo {
+  width: 95%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #0e0d0d;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 30px 60px 0px #666666, 0px 0px 0px #000 inset;
+          box-shadow: 0px 30px 60px 0px #666666, 0px 0px 0px #000 inset;
+}
+
+.footer .footerPartTwo .lastFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 350px;
+  width: 100%;
+}
+
+.footer .footerPartTwo .lastFooter > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.footer .footerPartTwo .lastFooter > span p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer .footerPart .copyrights {
+  background-color: #7574a9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footerPart .otherInform {
+  background-color: #74a977;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footerPart .forMenu {
+  width: 60%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1% 1%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: left;
+}
+
+.footer .footerPart .forMenu .table {
+  height: 450px;
+  width: 300px;
+  margin: 4px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px -5px 11px 0px #666666, 0px 0px 0px #000 inset;
+          box-shadow: 0px -5px 11px 0px #666666, 0px 0px 0px #000 inset;
+}
+
+.footer .footerPart .forMenu .tableOne .Lists > ul > li {
+  padding-bottom: 29px;
+  font-weight: bold;
+  padding: 15px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.footer .footerPart .forMenu .tableOne .Lists > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutUsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutUsList .IconImage {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutUsList .IconImage img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer .footerPart .forMenu .tableOne .Lists a {
+  text-decoration: none;
+  color: #4b4949;
+  font-weight: 500;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  font-size: 15px;
+  bottom: 10px;
+  position: relative;
+}
+
+.footer .footerPart .forMenu .tableOne .Lists a:hover {
+  color: #e70000;
+  text-decoration: underline;
+}
+
+.footer .footerPart .forMenu .tableTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footerPart .forMenu .tableTwo .Header {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock {
+  height: 300px;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 6px 4px;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock .Links {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 4px;
+  line-height: 3.3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4px 4px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  overflow: hidden;
+  color: #ffffff;
+  border-radius: 15px;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock .FaceBook {
+  background: #1a65c6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock .Instagram {
+  background-image: linear-gradient(45deg, #4658ac, #e7008a, #ff003a, #ff6d00, #ffc53f);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock .Twitter {
+  background: #3c6fb3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock .Telegram {
+  background: #0088cc;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock .Links:hover {
+  width: 150px;
+  text-align: center;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock .Links:hover i {
+  opacity: 0;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock .Links:hover span {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock .Links > span {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  font-size: 20px;
+  opacity: 0;
+  margin: 10px 8px;
+}
+
+.footer .footerPart .forMenu .tableTwo .socialBlock .Links > i {
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
+  font-size: 25px;
+  opacity: 1;
+  position: absolute;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer .footerPart .Map {
+    width: 220px;
+    height: 300px;
+  }
+  .footer .footerPart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footerPart .forMenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 223px;
+    bottom: 0px;
+    height: 590px;
+    position: relative;
+  }
+  .footer .footerPart .forMenu .table {
+    width: 210px;
+    margin: 3px 4px;
+    height: 309px;
+    padding: 15px;
+  }
+  .footer .footerPart .forMenu .table .Lists ul li {
+    font-size: 11.6px;
+    margin: -3px;
+  }
+  .footer .footerPart .forMenu .table .Header .FooterHeadOne {
+    font-size: 25px;
+    margin: 19px;
+    padding: 6px 0px;
+  }
+  .footer .footerPart .forMenu .table .Header .FooterHeadTwo {
+    font-size: 25px;
+    margin: 2px;
+    padding: 0px 0px;
+  }
+  .footer .footerPartTwo {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .footerPartTwo .lastFooter {
+    width: 231px;
+    margin: 0px 4px;
+  }
+  .footer .footerPartTwo .lastFooter > span > p {
+    font-size: 11px;
+    text-align: center;
+  }
+}
+
+.resultBlock {
+  width: 100%;
+  height: 750px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2980b9), color-stop(#8e44ad), to(#2c3e50));
+  background-image: linear-gradient(#2980b9, #8e44ad, #2c3e50);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resultBlock .counterBlock {
+  width: 80%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 30px 60px 0px #666666, 0px 0px 0px #000 inset;
+  box-shadow: 0px 30px 60px 0px #666666, 0px 0px 0px #000 inset;
+}
+
+.resultBlock .counterBlock .counters {
+  background-color: #7b614f;
+  width: 300px;
+  margin: 4px 4px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  height: 300px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4px 4px;
+}
+
+.resultBlock .counterBlock .counters > i {
+  font-size: 35px;
+  -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #ffffff;
+}
+
+.resultBlock .counterBlock .counters:hover > i {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+.resultBlock .counterBlock .counters .otherBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  position: relative;
+  text-align: center;
+  -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resultBlock .counterBlock .counters:hover .otherBlock {
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 568px) {
+  .resultBlock .counterBlock {
+    height: 500px;
+  }
+  .resultBlock .counterBlock .counters .otherBlock .headOfCounter {
+    font-size: 18px;
+  }
+  .resultBlock .counterBlock .counters .otherBlock .paragraphOfCounter {
+    font-size: 12px;
+  }
+  .resultBlock .counterBlock .counters {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .resultBlock .counterBlock {
+    height: 700px;
+  }
+  .resultBlock .counterBlock .counters .otherBlock .headOfCounter {
+    font-size: 18px;
+  }
+  .resultBlock .counterBlock .counters .otherBlock .paragraphOfCounter {
+    font-size: 12px;
+  }
+  .resultBlock .counterBlock .counters {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.ScrollButton {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 85px;
+  height: 85px;
+  z-index: 2;
+  border-radius: 50%;
+  color: #131111;
+  font-size: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 6px 6px 6px #514646;
+          box-shadow: 6px 6px 6px #514646;
+  font-weight: 600;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: #faf6f6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.ScrollButton:hover {
+  text-decoration: none;
+  color: #000;
+  background: #ffffff;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+.header {
+  width: 100%;
+  height: 150vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.header .HeaderParts {
+  width: 100%;
+  height: 20vh;
+  background-color: none;
+  position: absolute;
+  top: 1px;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header #demo {
+  width: 100%;
+  height: 150vh;
+  max-width: 100%;
+  z-index: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header #demo .carousel-inner {
+  width: 100%;
+  height: 150vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-x: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.header #demo .carousel-inner .carousel-item .imageBlock {
+  width: 100%;
+  height: 100vh;
+}
+
+.header #demo .carousel-indicators {
+  z-index: 20;
+  height: 100px;
+  bottom: 2px;
+  position: absolute;
+  padding: 4px 4px;
+}
+
+.header #demo .carousel-indicators > li {
+  background: #992727;
+  width: 50px;
+  height: 29px;
+  z-index: 10;
+  margin: 15px 15px;
+  border-radius: 100%;
+}
+
+.header #demo .carousel-inner .carousel-item .image1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../villimage/Beniamin_29.JPG);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../villimage/Beniamin_29.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 150vh;
+  background-position: center center;
+}
+
+.header #demo .carousel-inner .carousel-item .image2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../villimage/Beniamin_19.JPG);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../villimage/Beniamin_19.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 150vh;
+  background-position: center center;
+}
+
+.header #demo .carousel-inner .carousel-item .image3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../villimage/Beniamin_13.JPG);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../villimage/Beniamin_13.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 150vh;
+  background-position: center center;
+}
+
+.header #demo .carousel-item .carousel-caption > h3 {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  bottom: -1em;
+  text-transform: uppercase;
+  left: 0;
+  color: #e74c3c;
+  font-size: 29px;
+  font-weight: bold;
+  line-height: 3.6em;
+}
+
+.header #demo .carousel-item .carousel-caption > p {
+  color: #e74c3c;
+  position: relative;
+  bottom: 6em;
+  left: 0;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Navbar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  float: right;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+  -webkit-box-shadow: 0px 30px 60px 0px #666666, 0px 1px 0px #000 inset;
+  box-shadow: 0px 30px 60px 0px #666666, 0px 1px 0px #000 inset;
+}
+
+.Navbar.open {
+  width: 315px;
+}
+
+.Navbar .hover {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  margin: 19px 0;
+  position: relative;
+  color: #292727;
+  display: block;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.Navbar .hover::after {
+  content: "";
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  position: absolute;
+  width: 0%;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  height: 5px;
+  top: 42px;
+  left: 50%;
+  background-color: #111111;
+}
+
+.Navbar .hover:hover::after,
+.Navbar .hover:focus::after {
+  width: 250px;
+  left: 14%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.Navbar > h1 {
+  z-index: 10;
+  text-align: center;
+  color: #0c0c0b;
+}
+
+@media screen and (max-width: 568px) {
+  .header #demo .carousel-inner .carousel-item .image1 {
+    background-position: center center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../villimage/Beniamin_27.JPG);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../villimage/Beniamin_27.JPG);
+  }
+  .header #demo .carousel-inner .carousel-item .carousel-caption {
+    height: 300px;
+    bottom: 90px;
+  }
+  .header #demo .carousel-inner .carousel-item .carousel-caption > h3 {
+    color: #e74c3c;
+    font-size: 20px;
+    top: 60px;
+  }
+  .header #demo .carousel-inner .carousel-item .carousel-caption > p {
+    color: #e74c3c;
+    font-size: 16px;
+    bottom: 125px;
+  }
+  .header #demo .carousel-inner .carousel-item .image2 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../villimage/Beniamin_19.JPG);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../villimage/Beniamin_19.JPG);
+  }
+  .header #demo .carousel-inner .carousel-item .image3 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../villimage/Beniamin_28.JPG);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../villimage/Beniamin_28.JPG);
+  }
+  .header #demo .carousel-indicators > li {
+    background: #e74c3c;
+    width: 30px;
+    height: 11px;
+    z-index: 20;
+    margin: 15px 15px;
+    border-radius: 100%;
+  }
+  .Navbar .hover {
+    text-align: center;
+  }
+  .Navbar > h1 {
+    text-align: left;
+    left: 15px;
+    margin: 0px 30px;
+  }
+  .Navbar .hover:hover::after {
+    width: 210px;
+    left: 18%;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+}
+/*# sourceMappingURL=village.css.map */

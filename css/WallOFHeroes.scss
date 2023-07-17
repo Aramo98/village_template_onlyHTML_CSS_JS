@@ -1,0 +1,300 @@
+@import "Variables";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../villimage/Beniamin_32.JPG);
+}
+
+.back::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8));
+}
+
+.HeroesHeading {
+  position: relative;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 300px;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HeroesHeading .Header {
+  z-index: 100;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 4px 5px;
+}
+.HeroesHeading .Header .HeadOfheroes {
+  padding: 68px 60px;
+  width: 100%;
+  color: #fff;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.HeroesBlock {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8));
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.HeroesBlock .Block {
+  width: 100%;
+  height: 450px;
+  background: none;
+  padding: 30px 20px;
+  margin: 4px 4px;
+  position: relative;
+
+  // position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.HeroesBlock .Block .imgBlock {
+  margin: 4px 4px;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HeroesBlock .Block .imgBlock .image {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.HeroesBlock .Block .imgBlock .image > img {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+
+.HeroesBlock .Block .imgBlock .image .FrontBlock {
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8));
+  animation: frontBlock cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s 1 forwards;
+  animation-delay: calc(var(--i) * 2s);
+}
+
+@keyframes frontBlock{
+  0%{
+    height: 0;
+  }
+  100%{
+ height: 180px;
+  }
+}
+
+
+
+.HeroesBlock .Block .imgBlock .image .FrontBlock .NameSurname {
+  width: 100%;
+  height: 140px;
+  top: -30px;
+  line-height: 1.6em;
+  position: relative;
+  display: flex;
+
+  overflow: hidden;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    // transition-delay: 1s;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    font-size: 20px;
+    opacity: 0;
+    line-height: 1.4em;
+    top: -15px;
+    left: 0;
+    
+    color: #f8f5f5;
+    user-select: none;
+animation: head cubic-bezier(0.68, -0.55, 0.265, 1.55) 1 2s forwards;
+animation-delay: calc(var(--j) * 2s);
+@keyframes head {
+  0%{
+    top: -15px;
+    opacity: 0;
+  }
+  100%{
+    top: 0;
+    opacity: 1;
+  }
+}
+    span {
+      color: #fff;
+      font-size: 23px;
+      line-height: 2.6em;
+      text-align: center;
+      p {
+        font-size: 15px;
+        color: #fff;
+        position: relative;
+        top: 10px;
+        line-height: 0.6em;
+        text-align: center;
+      }
+    }
+    
+  }
+}
+
+
+
+
+.ArtsakhHeroesHeader {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(rgba(44, 43, 43, 0.8) rgba(0, 0, 0, 0.8));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ArtsakhHeroesHeader .Header {
+  z-index: 100;
+  background: none;
+  display: flex;
+
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 4px 4px;
+}
+.ArtsakhHeroesHeader .Header .Head {
+  padding: 68px 60px;
+  width: 100%;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and(max-width:991px) {
+  .HeroesBlock {
+    background: #1b1a1ae0;
+    .imgBlock {
+      max-height: $heightForImageBlock;
+    }
+  }
+
+  .HeroesHeading {
+    padding: 10px 10px;
+    height: 220px;
+  }
+
+  .HeroesHeading .Header {
+    width: 100%;
+    margin: 4px 4px;
+  }
+
+  .HeroesHeading .Header .HeadOfheroes {
+    font-size: 25px;
+    padding: 10px 20px;
+  }
+
+  .HeroesBlock .Block {
+    margin: 41px 22px 20px 21px;
+  }
+
+  .HeroesBlock .Block .imgBlock > img {
+    width: 100%;
+  }
+
+  .HeroesBlock .Block .imgBlock .image .FrontBlock .NameSurname {
+    height: 220px;
+    h3 {
+      color: #fff;
+      font-size: 18px;
+      span {
+        font-size: 15px;
+        color: #fff;
+      }
+    }
+  }
+
+  .footer {
+    .GeneralBlock {
+      .Block {
+        width: 197px;
+        padding: 4px 4px;
+        background: $heroesBackground;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:600px) {
+  .imgBlock {
+    max-width: 214px;
+  }
+}
+
+

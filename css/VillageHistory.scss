@@ -1,0 +1,100 @@
+
+.Histories{
+     padding: 4px 4px;
+     width: 100%;
+     height: 600px;
+     display: flex;
+
+     position: relative;
+     transition: all 0.6s ease-in;
+     justify-content: center;
+     align-items: center;
+}
+
+.Histories .blocksHistory{
+     width: 80%;
+     padding: 4px 0px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     height: 600px;
+     
+}
+
+
+.Histories .blocksHistory .Block{
+     width: 600px;
+     display: flex;
+     position: absolute;
+     justify-content: center;
+     align-items: center;
+     height: 600px;
+
+}
+
+
+.Histories .blocksHistory .Image{
+     background-image: url(../villimage/Beniamin_32.JPG);
+     background-repeat: no-repeat;
+     display: flex;
+     transition: all 0.5s ease;
+     justify-content: center;
+     align-items: center;
+     background-position: center center;
+     background-size: cover;
+     }
+
+// .Histories .blocksHistory .Image:hover{
+//      filter: blur(4px);
+// }
+
+
+
+     .Histories .blocksHistory .Image .History{
+          opacity: 0;
+          width: 600px;
+          height: 600px;
+          display: flex;
+          backdrop-filter:blur(5px);
+          background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          transition: all 0.5s ease;
+          } 
+          
+          .Histories .blocksHistory .Image:hover .History{
+               opacity: 1;
+          }
+
+          .Histories .blocksHistory .Image .History .headerHistory{
+               padding: 19px 20px;
+               font-size: 35px;
+               background: none;
+               color: white;
+               margin: 4px 4px;
+          }
+
+          .Histories .blocksHistory .Image .History .HistoryParagraph{
+              background: none;
+              color: #ffffff;
+              text-align: center;
+               padding: 19px 16px;
+          }
+
+          @media screen and(min-width:300px)and(max-width:568px){
+               .Histories .blocksHistory .Image{
+                    width: 260px;
+               }
+
+               .Histories .blocksHistory .Image .History{
+                    width: 260px;
+                    text-align: justify;
+               }
+
+          }
+
+     // .Histories .blocksHistory .Blocks{
+     //    flex-direction: row-reverse;
+     //    background-color: #44bd32;
+     // }  

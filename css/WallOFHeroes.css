@@ -1,0 +1,405 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../villimage/Beniamin_32.JPG);
+}
+
+.back::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8));
+}
+
+.HeroesHeading {
+  position: relative;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 300px;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.HeroesHeading .Header {
+  z-index: 100;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 4px 5px;
+}
+
+.HeroesHeading .Header .HeadOfheroes {
+  padding: 68px 60px;
+  width: 100%;
+  color: #fff;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.HeroesBlock {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8));
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.HeroesBlock .Block {
+  width: 100%;
+  height: 450px;
+  background: none;
+  padding: 30px 20px;
+  margin: 4px 4px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.HeroesBlock .Block .imgBlock {
+  margin: 4px 4px;
+  width: 300px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.HeroesBlock .Block .imgBlock .image {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.HeroesBlock .Block .imgBlock .image > img {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.HeroesBlock .Block .imgBlock .image .FrontBlock {
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8));
+  -webkit-animation: frontBlock cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s 1 forwards;
+          animation: frontBlock cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s 1 forwards;
+  -webkit-animation-delay: calc(var(--i) * 2s);
+          animation-delay: calc(var(--i) * 2s);
+}
+
+@-webkit-keyframes frontBlock {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 180px;
+  }
+}
+
+@keyframes frontBlock {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 180px;
+  }
+}
+
+.HeroesBlock .Block .imgBlock .image .FrontBlock .NameSurname {
+  width: 100%;
+  height: 140px;
+  top: -30px;
+  line-height: 1.6em;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  z-index: 3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.HeroesBlock .Block .imgBlock .image .FrontBlock .NameSurname h3 {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  font-size: 20px;
+  opacity: 0;
+  line-height: 1.4em;
+  top: -15px;
+  left: 0;
+  color: #f8f5f5;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-animation: head cubic-bezier(0.68, -0.55, 0.265, 1.55) 1 2s forwards;
+          animation: head cubic-bezier(0.68, -0.55, 0.265, 1.55) 1 2s forwards;
+  -webkit-animation-delay: calc(var(--j) * 2s);
+          animation-delay: calc(var(--j) * 2s);
+}
+
+@-webkit-keyframes head {
+  0% {
+    top: -15px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes head {
+  0% {
+    top: -15px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.HeroesBlock .Block .imgBlock .image .FrontBlock .NameSurname h3 span {
+  color: #fff;
+  font-size: 23px;
+  line-height: 2.6em;
+  text-align: center;
+}
+
+.HeroesBlock .Block .imgBlock .image .FrontBlock .NameSurname h3 span p {
+  font-size: 15px;
+  color: #fff;
+  position: relative;
+  top: 10px;
+  line-height: 0.6em;
+  text-align: center;
+}
+
+.ArtsakhHeroesHeader {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(44, 43, 43, 0.8)));
+  background: linear-gradient(rgba(44, 43, 43, 0.8) rgba(0, 0, 0, 0.8));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ArtsakhHeroesHeader .Header {
+  z-index: 100;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 4px 4px;
+}
+
+.ArtsakhHeroesHeader .Header .Head {
+  padding: 68px 60px;
+  width: 100%;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 991px) {
+  .HeroesBlock {
+    background: #1b1a1ae0;
+  }
+  .HeroesBlock .imgBlock {
+    max-height: 222px;
+  }
+  .HeroesHeading {
+    padding: 10px 10px;
+    height: 220px;
+  }
+  .HeroesHeading .Header {
+    width: 100%;
+    margin: 4px 4px;
+  }
+  .HeroesHeading .Header .HeadOfheroes {
+    font-size: 25px;
+    padding: 10px 20px;
+  }
+  .HeroesBlock .Block {
+    margin: 41px 22px 20px 21px;
+  }
+  .HeroesBlock .Block .imgBlock > img {
+    width: 100%;
+  }
+  .HeroesBlock .Block .imgBlock .image .FrontBlock .NameSurname {
+    height: 220px;
+  }
+  .HeroesBlock .Block .imgBlock .image .FrontBlock .NameSurname h3 {
+    color: #fff;
+    font-size: 18px;
+  }
+  .HeroesBlock .Block .imgBlock .image .FrontBlock .NameSurname h3 span {
+    font-size: 15px;
+    color: #fff;
+  }
+  .footer .GeneralBlock .Block {
+    width: 197px;
+    padding: 4px 4px;
+    background: #ffffff2f;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .imgBlock {
+    max-width: 214px;
+  }
+}
+/*# sourceMappingURL=WallOFHeroes.css.map */

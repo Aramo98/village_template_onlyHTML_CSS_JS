@@ -1,0 +1,103 @@
+@mixin box-shadow($parameter) {
+  -webkit-box-shadow: $parameter;
+  -moz-box-shadow: $parameter;
+  box-shadow: $parameter;
+}
+ $Hamburger: 0px 30px 60px 0px #666666, 0px 0px 0px #000 inset;
+
+
+.HeaderParts .hamburger{
+     width: 60px;
+     height: 60px;
+     background-color: #eeeeee;
+     position: fixed;
+     right: 15px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     @include box-shadow($Hamburger);
+     &:hover{
+          cursor: pointer;
+     }
+
+}
+
+.HeaderParts .hamburger .list{
+     width: 3em;
+     transition:  all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+     position: relative;
+     height: 0.5em;
+     background-color: #000000;
+}
+
+.HeaderParts .hamburger .list::before{
+     content: "";
+     position: absolute;
+     top: 18px;
+     transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+     width: 3em;
+     height: 0.5em;
+     background-color: #000000;
+}
+
+
+.HeaderParts .hamburger .list::after{
+     content: "";
+     position: absolute;
+     top: -18px;
+     width: 3em;
+    transition:  all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+     height: 0.5em;
+     background-color: #000000;
+}
+
+.HeaderParts .hamburger .open.list::after{
+     transform: rotate(-405deg);
+     top:0;
+}
+.HeaderParts .hamburger .open.list{
+   background: none;
+}
+
+.HeaderParts .hamburger .open.list::before{
+     transform: rotate(405deg);
+     top:0;
+}
+
+@media screen and(min-width:300px)and(max-width:568px){
+     .HeaderParts .hamburger{
+          display: flex;
+          background-color: #ffffff;
+          justify-content: center;
+          align-items: center;
+     width: 55px;
+     height: 55px;
+     }
+
+     .HeaderParts .hamburger .list{
+     width: 2.5em;
+     transition: 0.3s ease;
+     position: relative;
+     height: 0.4em;
+     background-color: #000000;
+}
+
+.HeaderParts .hamburger .list::before{
+
+     top: 18px;
+      transition: 0.5s ease;
+     width: 2.5em;
+     height: 0.4em;
+     background-color: #000000;
+}
+
+
+.HeaderParts .hamburger .list::after{
+
+     top: -18px;
+     width: 2.5em;
+      transition: 0.5s ease;
+     height: 0.4em;
+     background-color: #000000;
+}
+}

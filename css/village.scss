@@ -1,0 +1,333 @@
+
+     // Importing  Files
+     @import "BarBlock";
+     @import "Hamburger";
+     @import "VillageHistory"; 
+     @import "fotter";
+     @import "resultBlock";
+     
+     // Creating Website
+
+
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box; 
+     scroll-behavior: smooth;
+}
+
+.ScrollButton{
+     position: fixed;
+     bottom: 15px;
+     right: 15px;
+      width: 85px;
+      height: 85px;
+     z-index: 2;
+     border-radius: 50%;
+     color: #131111;
+     font-size: 35px;
+     display: flex;
+     box-shadow: 6px 6px 6px #514646;
+     font-weight: 600;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     background: #faf6f6;
+     transition: 0.5s;
+  &:hover{
+     text-decoration: none;
+     color: #000;
+     background: #ffffff;
+     transform: translateY(-15px);
+  }
+
+}
+
+.header{
+width: 100%;
+height: 150vh;
+
+display: flex;
+justify-content: center;
+align-items: flex-start;
+// background-color: #131174;
+}
+
+
+
+.header .HeaderParts{
+     width: 100%;
+     height: 20vh;
+     background-color: none;
+     position: absolute;
+     top: 1px;
+     z-index: 10;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+}
+
+
+
+
+.header  #demo{
+     width: 100%;
+     height: 150vh;
+     max-width: 100%;
+     z-index: 0;
+     // background-color: #3c3939;
+     position: relative;
+      display: -webkit-box;
+  display: -webkit-flexbox;
+      display: flex;
+    align-items: center;
+   
+    justify-content: center;
+}
+
+.header  #demo .carousel-inner{
+    width: 100%;
+    height: 150vh; 
+    background-attachment: fixed;
+//     background-color: rgb(2, 9, 31);
+    background-size: cover;
+    background-position-x: center center;
+     display: flex;
+     z-index: 0;
+     justify-content: flex-start;
+     align-items: flex-start;
+    
+}
+
+.header   #demo .carousel-inner .carousel-item .imageBlock{
+  
+ width: 100%;
+height: 100vh;
+
+}
+
+ .header  #demo .carousel-indicators{
+      z-index: 20;
+      height: 100px;
+      bottom: 2px;
+      position: absolute;
+     //  margin: 4px 4px;
+      padding: 4px 4px;
+ }
+
+  .header  #demo .carousel-indicators>li{
+      background: rgb(153, 39, 39);
+      width: 50px;
+      height: 29px;
+      z-index: 10;
+      
+      margin: 15px 15px;
+      border-radius: 100%;
+ }
+
+
+.header   #demo .carousel-inner .carousel-item .image1{
+     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../villimage/Beniamin_29.JPG);
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     height: 150vh;
+     background-position: center center;
+}
+
+.header  #demo .carousel-inner .carousel-item .image2{
+     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../villimage/Beniamin_19.JPG);
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     object-fit: cover;
+     height: 150vh;
+     background-position: center center;
+}
+
+.header  #demo .carousel-inner .carousel-item .image3{
+     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../villimage/Beniamin_13.JPG);
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+  width: 100%;
+  height: 150vh;
+background-position: center center;
+}
+ 
+
+$captionFontColor:#e74c3c;
+$captionFontSize: 29px;
+$captionFontWeight: bold;
+
+
+.header  #demo .carousel-item .carousel-caption>h3{
+     width: 100%;
+     height: 300px;
+     position: relative;
+     bottom: -1em;
+     text-transform: uppercase;
+     left: 0;
+     color: $captionFontColor;
+     font-size: $captionFontSize;
+     font-weight: $captionFontWeight;
+     line-height: 3.6em;
+}
+
+$captionParagraphFontColor:#e74c3c;
+$captionParagraphFontSize: 20px;
+$captionParagraphFontWeight: bold;
+
+.header #demo .carousel-item .carousel-caption>p{
+ color: $captionParagraphFontColor;
+ position: relative;
+bottom: 6em;
+left: 0;
+text-align: center;
+text-transform: capitalize;
+     font-size: $captionParagraphFontSize;
+     font-weight: $captionParagraphFontWeight;
+}
+
+@mixin box-shadow($params) {
+  -webkit-box-shadow: $params;
+  -moz-box-shadow: $params;
+  box-shadow: $params;
+}
+ $shadows: 0px 30px 60px 0px #666666, 0px 1px 0px #000 inset;
+
+
+
+.Navbar{
+    height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  float: right;
+  top: 0;
+ left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  @include box-shadow($shadows)
+}
+
+  .Navbar.open{
+       width: 315px;
+}
+.Navbar .hover{
+    padding: 8px 8px 8px 8px;;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: 0.5s ease;
+  margin: 19px 0;
+  position: relative;
+  color: #292727;
+  display: block;
+  transition: 0.3s all;
+  &::after{
+       content: "";
+      transition: 0.5s ease;
+       position: absolute;
+       width: 0%;
+       transform-origin: right;
+       height: 5px;
+       top: 42px;
+       left: 50%;
+       background-color: #111111;
+  }
+}
+
+.Navbar .hover:hover::after,
+.Navbar .hover:focus::after{
+     width: 250px;
+     left: 14%;
+     transition: 0.5s ease;
+    
+}
+
+ .Navbar>h1{
+     z-index: 10;
+     text-align: center;
+     color: #0c0c0b;
+}
+
+@media screen and(max-width: 568px){
+.header #demo .carousel-inner .carousel-item .image1{
+     background-position: center center;
+background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../villimage/Beniamin_27.JPG);
+}
+
+.header #demo .carousel-inner .carousel-item .carousel-caption{
+
+    height: 300px;
+    bottom: 90px;
+}
+
+.header #demo .carousel-inner .carousel-item .carousel-caption>h3{
+    color: $captionFontColor;
+    font-size: 20px;
+    top: 60px;
+}
+
+
+.header #demo .carousel-inner .carousel-item .carousel-caption>p{
+      color: $captionParagraphFontColor;
+    font-size: 16px;
+    bottom: 125px;
+}
+
+.header #demo .carousel-inner .carousel-item .image2{
+background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../villimage/Beniamin_19.JPG);
+}
+.header #demo .carousel-inner .carousel-item .image3{
+background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../villimage/Beniamin_28.JPG);
+}
+
+  .header  #demo .carousel-indicators>li{
+      background: $captionFontColor;
+    width: 30px;
+    height: 11px;
+      z-index: 20;
+      margin: 15px 15px;
+      border-radius: 100%;
+ }
+ .Navbar .hover{
+    text-align: center;    
+ }
+ 
+
+  .Navbar>h1{
+       text-align: left; 
+       left: 15px;
+       margin: 0px 30px;
+  }
+
+.Navbar .hover:hover::after{
+        width: 210px;
+    left: 18%;
+     transition: 0.5s ease;
+    
+}
+}
+
+
+
+
